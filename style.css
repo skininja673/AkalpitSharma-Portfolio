@@ -95,7 +95,8 @@ section {
     position: relative;
     background: #009e66;
     display: inline-block;
-    color: #000;
+    /* color: #000; */
+    color: #fff;
     margin-top: 20px;
     padding: 10px 30px;
     font-size: 18px;
@@ -208,7 +209,8 @@ img {
 }
 .work .content .workBx img {
     max-width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    /* border: 5px solid rgba(0, 0, 0, 0.4); */
+    border: 3px solid #009e66;
     cursor: pointer;
 }
 .work .content .workBx img:hover {
@@ -235,7 +237,7 @@ img {
     font-weight: 600;
 }
 
-/* Creating Testimonial Layout in CSS */
+/* Creating Testimonial Layout in CSS
 .testimonial {
     background: #111;
 }
@@ -273,7 +275,7 @@ img {
     line-height: 1.7em;
     font-size: 20px;
     font-style: italic;
-}
+} */
 
 /* Creating Contact Details Layout in CSS */
 .contact {
@@ -374,13 +376,21 @@ img {
     display: flex;
     flex-direction: row;
     letter-spacing: 15px;
-    padding-left: 60px;
+    padding-left: 0px;
 }
 .contactInfoBx .boxSocial .fa {
     color: #009e66;
     font-size: 42px;
     cursor: pointer;
+    /* border: 2px solid red; */
 }
+
+.styleMe:hover,
+.styleMe:focus {
+    border-bottom: 1px solid #009e66;
+}
+
+/* footer styling */
 footer.copyright {
     background: #000;
     color: #fff;
@@ -506,11 +516,22 @@ footer.copyright {
         margin: 10px 0;
     }
 }
+
+.secondary-btn {
+    /* border: 3px solid red; */
+    display: flex;
+}
+
 .cde {
+    border: 0;
+    cursor: pointer;
     font-size: 1rem;
-    /* padding: 0px; */
-    /* width: calc(100% / 2 - 50px); */
-    margin: 0 auto;
+    margin: 20px auto;
+}
+
+.workBx h2 {
+    /* border: 2px solid red; */
+    margin-bottom: 20px;
 }
 
 #home {

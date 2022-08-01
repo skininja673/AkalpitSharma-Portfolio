@@ -30,6 +30,10 @@ header .logo {
     font-weight: 700;
     letter-spacing: 2px;
 }
+
+header .logo:hover {
+    border-bottom: 2px solid #009e66;
+}
 header ul {
     position: relative;
     display: flex;
@@ -45,6 +49,12 @@ header ul li a {
     color: #fff;
     text-decoration: none;
 }
+
+header ul li a:hover,
+header ul li a:focus {
+    border-bottom: 2px solid #009e66;
+}
+
 /* Creating Stiky Header Menu Nav Bar */
 header.sticky {
     background: #fff;
@@ -237,46 +247,6 @@ img {
     font-weight: 600;
 }
 
-/* Creating Testimonial Layout in CSS
-.testimonial {
-    background: #111;
-}
-.testimonial .content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.testimonial .content .testimonialBx {
-    background: #161616;
-    padding: 60px 40px;
-    margin: 20px;
-    max-width: calc(50% - 40px);
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
-}
-.testimonial .content .testimonialBx:hover {
-    border-bottom: 2px solid #009e66;
-    cursor: pointer;
-}
-.testimonial .content .testimonialBx p {
-    color: #fff;
-    font-style: italic;
-    font-size: 18px;
-    font-weight: 100;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 24px;
-}
-.testimonial .content .testimonialBx h3 {
-    margin-top: 40px;
-    text-align: end;
-    color: #009e66;
-    font-weight: 200;
-    line-height: 1.7em;
-    font-size: 20px;
-    font-style: italic;
-} */
-
 /* Creating Contact Details Layout in CSS */
 .contact {
     background: #111;
@@ -375,7 +345,7 @@ img {
 .contactInfoBx .boxSocial {
     display: flex;
     flex-direction: row;
-    letter-spacing: 15px;
+    /* letter-spacing: 15px; */
     padding-left: 0px;
 }
 .contactInfoBx .boxSocial .fa {
@@ -383,6 +353,11 @@ img {
     font-size: 42px;
     cursor: pointer;
     /* border: 2px solid red; */
+    margin: 0px 5px;
+    padding: 10px;
+}
+.contactInfoBx .boxSocial .fa:hover {
+    border-bottom: 2px solid #009e66;
 }
 
 .styleMe:hover,
@@ -539,11 +514,6 @@ footer.copyright {
 }
 
 @media (max-width: 768px) {
-    .testimonial .content .testimonialBx {
-        max-width: calc(100% - 20px);
-        padding: 40px 20px;
-        margin: 30px;
-    }
     .heading.bottom {
         display: flex;
         justify-content: space-between;
@@ -553,11 +523,6 @@ footer.copyright {
 }
 
 @media (max-width: 600px) {
-    .testimonial .content .testimonialBx {
-        max-width: calc(100% - 20px);
-        padding: 40px 20px;
-        margin: 30px;
-    }
     .heading.bottom {
         display: flex;
         justify-content: space-between;

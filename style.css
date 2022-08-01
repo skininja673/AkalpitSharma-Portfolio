@@ -68,6 +68,32 @@ header.sticky ul li a {
     color: #111;
 }
 
+/* ---------------------------------- */
+.flexMe {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.textBx {
+    border: 2px solid black;
+}
+
+.imgBox {
+    /* border: 3px solid yellow; */
+    width: 25%;
+    min-width: 500px;
+    /* border-radius: 50%; */
+}
+.imgBox img {
+    display: inline-block;
+    width: 100%;
+    /* border-radius: 5%; */
+    border-radius: 50%;
+}
+
+/* ---------------------------------------------- */
 /* Creating Services Layout */
 section {
     padding: 80px;
@@ -76,8 +102,8 @@ section {
     position: relative;
     min-height: 100vh;
     background: #111;
-    background: url(images/myPic1.jpg);
-    /* background: url(images/drake.jpg); */
+    /* background: url(images/useThis.JPG); */
+
     background-color: black;
     background-size: cover;
     background-position: right;
@@ -513,7 +539,50 @@ footer.copyright {
     display: flex;
 }
 
+/* media queries */
+
+@media (max-width: 990px) {
+    .flexMe {
+        /* border: 2px solid magenta; */
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .textBx {
+        /* border: 2px solid red; */
+        text-align: center;
+        width: 100%;
+        position: static;
+        padding: 20px 0px;
+        order: 10;
+        font-size: 2rem;
+        margin-bottom: 100px;
+    }
+    .aboutMeButton {
+        /* border: 2px solid red; */
+        margin-top: 80px;
+    }
+
+    .imgBox {
+        /* border: 3px solid yellow; */
+        width: 25%;
+        min-width: 80%;
+    }
+    /*
+.imgBox img {
+    display: inline-block;
+    width: 100%;
+
+    border-radius: 50%;
+}*/
+}
+
 @media (max-width: 768px) {
+    .textBx {
+        font-size: 1.5rem;
+    }
     .heading.bottom {
         display: flex;
         justify-content: space-between;
@@ -528,5 +597,10 @@ footer.copyright {
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
+    }
+}
+@media (max-width: 500px) {
+    .textBx {
+        font-size: 1rem;
     }
 }

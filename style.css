@@ -80,16 +80,14 @@ header.sticky ul li a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.textBx {
-    border: 2px solid black;
+    min-width: 100%;
+    min-height: 100vh;
 }
 
 .imgBox {
     /* border: 3px solid yellow; */
-    width: 25%;
-    min-width: 500px;
+    /* width: 25%; */
+    max-width: 500px;
     /* border-radius: 50%; */
 }
 .imgBox img {
@@ -551,29 +549,42 @@ footer.copyright {
 /* media queries */
 
 @media (max-width: 990px) {
+    .banner {
+        /* border: 2px solid green; */
+        padding-top: 40px;
+    }
     .flexMe {
-        height: 80vh;
+        /* border: 2px solid red; */
+        min-height: 80vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        margin-top: 60px;
+        padding-top: 0px;
     }
 
     .textBx {
+        /* border: 2px solid magenta; */
         text-align: center;
         width: 100%;
         position: static;
         padding: 20px 0px;
         order: 10;
         font-size: 2rem;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
     .aboutMeButton {
-        margin-top: 80px;
+        margin-top: 30px;
     }
 
     .imgBox {
+        /* border: 2px solid green; */
         width: 25%;
         min-width: 80%;
+        text-align: center;
+    }
+    .imgBox img {
+        max-width: 330px;
     }
 }
 

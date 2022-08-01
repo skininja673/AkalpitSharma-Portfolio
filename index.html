@@ -1,12 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-     <head>
-          <meta charset="UTF-8" />
-          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>My Portfolio</title>
-     </head>
-     <body>
-          <h1>In Production...</h1>
-     </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PortFolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="ext.js" language="javascript"></script>
+        <script src="https://kit.fontawesome.com/c12dbf7dd5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" /> -->
+    </head>
+    <body>
+        <!-- Creating Menu Tabs & Logo at Top Using HTML -->
+        <header>
+            <a href="#" class="logo">Portfolio</a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="menu">
+                <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu();">About</a></li>
+                <li><a href="#services" onclick="toggleMenu();">Skills</a></li>
+                <li><a href="#work" onclick="toggleMenu();">Projects</a></li>
+                <!-- <li><a href="#testimonial" onclick="toggleMenu();">Testimonial</a></li> -->
+                <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+            </ul>
+        </header>
+
+        <!-- Creating Banner Layout in HTML -->
+        <section class="banner" id="home">
+            <div class="textBx">
+                <h2>
+                    Hello, I'm<br />
+                    <span>Akalpit Sharma</span>
+                </h2>
+                <h3>I'm a Front End Web Developer.</h3>
+                <a href="#about" class="btn">About Me</a>
+            </div>
+        </section>
+
+        <!-- Creating About Me Layout in HTML -->
+        <section class="about" id="about">
+            <div class="heading">
+                <p>Get to Know me</p>
+                <h2>About Me</h2>
+            </div>
+            <div class="content">
+                <div class="w50">
+                    <img src="images/myPic2.jpg" alt="" class="proPic" />
+                </div>
+                <div class="contentBx w50">
+                    <h3>Who am I ?</h3>
+                    <h2>I'm <b>Akalpit Sharma</b>, a Front End Web Developer</h2>
+                    <p>
+                        I am a developer with a background in computer science. I am a hardworking and innovative thinker. I love creating user-friendly, responsive and accessible application. I make sure that my applications are clean and engaging. I bring a strong communication
+                        and interpersonal skills to every team that I work with to bring positive work enviorenment.
+                    </p>
+                    <br />
+                    <p>When I am not coding I enjoy watching foreign movies, listen to music. I also enjoy hopping on my bike and go for a long ride. You can catch me with a cup of coffee glued to a mobile at times.</p>
+
+                    <div class="heading bottom">
+                        <a href="images/resume.docx" class="btn round">Download Resume</a>
+                        <div class="bt">
+                            <!-- <b>Name:</b> Akalpit Sharma<br /> -->
+                            <!-- <b>Age:</b> 99 -->
+                        </div>
+                        <div class="bt">
+                            <b>Email:</b> sharma.akalpit@gmail.com<br />
+                            <b>Location:</b> Toronto, Canada (Open to Relocate)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creating Services Layout in HTML -->
+        <section class="services" id="services">
+            <div class="heading white">
+                <h2>Skills</h2>
+                <p></p>
+            </div>
+            <div class="content">
+                <div class="servicesBx">
+                    <!-- <i class="fa fa-css3 fa-4x"></i> -->
+                    <i class="fab fa-css3"></i>
+                    <p>CSS</p>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+                </div>
+                <div class="servicesBx">
+                    <i class="fab fa-html5"></i>
+                    <!-- <i class="fa fa-html5 fa-4x"></i> -->
+                    <p>HTML</p>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+                </div>
+                <div class="servicesBx">
+                    <i class="fab fa-js"></i>
+                    <p>Java Script</p>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+                </div>
+                <div class="servicesBx">
+                    <i class="fab fa-sass"></i>
+                    <!-- <i class="fa fa-joomla fa-4x"></i> -->
+                    <p>Sass</p>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+                </div>
+                <div class="servicesBx">
+                    <i class="fab fa-react"></i>
+                    <!-- <i class="fa fa-android fa-4x"></i> -->
+                    <p>React</p>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+                </div>
+                <div class="servicesBx">
+                    <i class="fab fa-git-alt"></i>
+                    <!-- <i class="fa fa-cart-arrow-down fa-4x"></i> -->
+                    <p>Git</p>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+                </div>
+                <div class="servicesBx">
+                    <i class="fas fa-universal-access"></i>
+                    <!-- <i class="fa fa-cart-arrow-down fa-4x"></i> -->
+                    <p>Accessibility</p>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+                </div>
+                <div class="servicesBx">
+                    <i class="fas devicon-firebase-plain"></i>
+                    <p>Firebase</p>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Creating Work Layout in HTML -->
+
+        <section class="work" id="work">
+            <div class="heading">
+                <h2>Projects</h2>
+                <p><b></b></p>
+            </div>
+            <div class="content">
+                <div class="workBx">
+                    <h2>Project</h2>
+                    <a href="https://www.udemy.com/course/javascript-complete-real-time-production-usage-2019/?referralCode=3F592B0B316DED43E0EE" target="_blank">
+                        <!-- <img src="images/jsCourse.jpg" alt="" /> -->
+                        <img src="images/crs.JPG" alt="" />
+                    </a>
+                    <button class="btn round cde">View Live</button>
+                    <button class="btn round cde">View Code</button>
+                </div>
+                <div class="workBx">
+                    <h2>Project</h2>
+                    <a href="https://www.udemy.com/course/html-5-from-beginner-to-pro-code-next-level/?referralCode=A9335AA594907827261C" target="_blank">
+                        <img src="images/crs.JPG" alt="" />
+                    </a>
+                    <button class="btn round cde">View Live</button>
+                    <button class="btn round cde">View Code</button>
+                </div>
+                <div class="workBx">
+                    <h2>Project</h2>
+                    <a href="https://www.udemy.com/course/css-nextlevel/?referralCode=86C577A88AE684ADB9F0" target="_blank">
+                        <img src="images/crs.JPG" alt="" />
+                    </a>
+                    <button class="btn round cde">View Live</button>
+                    <button class="btn round cde">View Code</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creating Contact Layout in HTML -->
+        <section class="contact" id="contact">
+            <div class="heading white">
+                <p>Feel free to contact me anytimes</p>
+                <h2>Get in Touch</h2>
+            </div>
+            <div class="content">
+                <div class="contactInfo">
+                    <h3>Contact Info :</h3>
+                    <!-- <p>
+                        Always available for freelance work if the right project<br />
+                        comes along, Feel free to contact me!
+                    </p> -->
+                    <div class="contactInfoBx">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p>Toronto Ontario</p>
+                                <!-- <p>Toronto Ontario,<br />4916 Lauren Drive<br />Brooklyn, Wisconsin,<br />WI, 53521</p> -->
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Phone no</h3>
+                                <p>(581) 397-7738</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Email Address</h3>
+                                <p>sharma.akalpit@gmail.com</p>
+                            </div>
+                        </div>
+                        <br />
+                        <h3>Social Connect</h3>
+                        <div class="boxSocial">
+                            <!-- <div class="icon">
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fa fa-facebook-square"></i>
+                                </a>
+                            </div> -->
+                            <div class="icon">
+                                <a href="https://www.twitter.com" target="_blank">
+                                    <i class="fa fa-twitter-square"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://www.linkedin.com/" target="_blank">
+                                    <i class="fa fa-linkedin-square"></i>
+                                </a>
+                            </div>
+                            <!-- <div class="icon">
+                                <a href="https://www.instagram.com/?hl=en" target="_blank">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="formBx">
+                    <form>
+                        <h3>Message Me</h3>
+                        <input type="text" placeholder="Full Name" name="" />
+                        <input type="email" placeholder="Email" name="" />
+                        <textarea name="" rows="6" id="" placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send Message" name="" />
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creating Footer Layout in HTML -->
+        <footer class="copyright">
+            <p>~ Built by Akalpit Sharma ~</p>
+        </footer>
+    </body>
 </html>

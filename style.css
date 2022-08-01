@@ -389,12 +389,11 @@ img {
     color: #009e66;
     font-size: 42px;
     cursor: pointer;
-    /* border: 2px solid red; */
+
     margin: 0px 5px;
     padding: 10px;
 }
 .contactInfoBx .boxSocial .fa:hover ~ hr {
-    /* border-bottom: 2px solid #009e66; */
     width: 100%;
 }
 
@@ -531,7 +530,6 @@ footer.copyright {
 }
 
 .secondary-btn {
-    /* border: 3px solid red; */
     display: flex;
 }
 
@@ -543,7 +541,6 @@ footer.copyright {
 }
 
 .workBx h2 {
-    /* border: 2px solid red; */
     margin-bottom: 20px;
 }
 
@@ -555,7 +552,6 @@ footer.copyright {
 
 @media (max-width: 990px) {
     .flexMe {
-        /* border: 2px solid magenta; */
         height: 80vh;
         display: flex;
         flex-direction: column;
@@ -563,7 +559,6 @@ footer.copyright {
     }
 
     .textBx {
-        /* border: 2px solid red; */
         text-align: center;
         width: 100%;
         position: static;
@@ -573,22 +568,13 @@ footer.copyright {
         margin-bottom: 100px;
     }
     .aboutMeButton {
-        /* border: 2px solid red; */
         margin-top: 80px;
     }
 
     .imgBox {
-        /* border: 3px solid yellow; */
         width: 25%;
         min-width: 80%;
     }
-    /*
-.imgBox img {
-    display: inline-block;
-    width: 100%;
-
-    border-radius: 50%;
-}*/
 }
 
 @media (max-width: 768px) {
@@ -604,11 +590,32 @@ footer.copyright {
 }
 
 @media (max-width: 600px) {
+    .content .contentBx h3,
+    .content .contentBx h2 {
+        text-align: center;
+        padding: 5px;
+    }
     .heading.bottom {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
+    }
+    .resumeBx {
+        margin: 50px 0px 10px 0px;
+    }
+
+    .socialHeading {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .boxSocial {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .formBx form input[type='submit'] {
+        margin: 15px auto 5px auto;
     }
 }
 @media (max-width: 500px) {

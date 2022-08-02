@@ -51,8 +51,11 @@
                     <a href="#about" class="btn aboutMeButton">About Me</a>
                 </div>
                 <div class="imgBox">
-                    <img src="./images/myPic.JPG" alt="" class="myImage" />
-                </div>
+                    <img src="./images/laptop-2-img.jpg" alt="" class="myImage" />
+
+                    <!-- <img src="./images/myPic.JPG" alt="" class="myImage" style="border-radius: 50%;"/> -->
+
+
             </div>
         </section>
 
@@ -64,7 +67,7 @@
             </div>
             <div class="content">
                 <div class="w50">
-                    <img src="images/myPic.JPG" alt="" class="proPic" />
+                    <img src="images/coffee-pic.jpg" alt="" class="proPic" />
                 </div>
                 <div class="contentBx w50">
                     <h3>Who am I ?</h3>
@@ -255,15 +258,21 @@
                                     <hr />
                                 </a>
                             </div>
+                            <div class="icon">
+                                <a href = "mailto: sharma.akalpit@gmail.com">
+                                    <i class="fa fa-solid fa-envelope"></i>
+                                    <hr />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="formBx">
-                    <form>
+                    <form action="POST" data-netlify="true">
                         <h3>Message Me</h3>
-                        <input type="text" placeholder="Full Name" name="" class="styleMe" />
-                        <input type="email" placeholder="Email" name="" class="styleMe" />
-                        <textarea name="" rows="6" id="" placeholder="Your Message" class="styleMe"></textarea>
+                        <input type="text" placeholder="Name" name="name" class="styleMe" />
+                        <input type="email" placeholder="Email" name="email" class="styleMe" />
+                        <textarea name="message" rows="6" id="" placeholder="Your Message" class="styleMe"></textarea>
                         <input type="submit" value="Send Message" name="" class="styleMe" />
                     </form>
                 </div>

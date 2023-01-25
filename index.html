@@ -8,12 +8,11 @@
         <script src="ext.js" language="javascript"></script>
         <script src="https://kit.fontawesome.com/c12dbf7dd5.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet" />
     </head>
     <body>
-
         <!-- Creating Menu Tabs & Logo at Top Using HTML -->
         <header>
             <a href="#" class="logo">Portfolio</a>
@@ -56,6 +55,7 @@
                 </div>
                 <div class="imgBox">
                     <img src="./images/laptop-2-img.jpg" alt="" class="myImage" />
+                </div>
             </div>
         </section>
 
@@ -157,50 +157,115 @@
             <div class="heading">
                 <h2>Projects</h2>
             </div>
+            <div class="disclaimer">
+                <p>
+                    **All the projects idea / design are taken from one of the courses I enrolled in Udemy. The aim of making these projects is to showcase and getting comfortable in using React library. I enjoy coding in React and regularly upgrading my skills to tackle more
+                    complex problems. You are welcome to view the code and any comment or suggestion is highly appreciated 🙏**
+                </p>
+            </div>
             <div class="content">
+                <!---------find me a meal-------------------------------->
                 <div class="workBx">
-                    <p class="topic">Search your favourite meal by a meal name or get a surprise meal 🥣 </p>
-
-                    <p class="topic-2">HTML | CSS | SASS | API | JS</p>
+                    <p class="topic">
+                        <span class="title">Find Me A Meal App: </span> This is a <span class="topic-2">Java Script</span> app, in which third party <a id="special" href="https://www.themealdb.com/api.php" target="_blank"> mealdb-api </a> is used to fetch data, and user can
+                        search his favorite meal
+                    </p>
 
                     <a href="https://find-me-a-meal.netlify.app/" target="_blank">
-                        <img src="images/chickenSoup.JPG" alt="" />
+                        <img src="images/chickenSoup.JPG" alt="" class="thumbnail" />
                     </a>
 
                     <div class="secondary-btn">
-                        <a href="https://github.com/findMeAMealApp/Project2-FindMeAMeal" class=" btn round cde" target="_blank" style="color: white;">View Code</a>
+                        <a href="https://github.com/findMeAMealApp/Project2-FindMeAMeal" class="btn round cde" target="_blank" style="color: white">View Code</a>
                     </div>
-
                 </div>
+
+                <!---------cocktail-------------------------------------->
                 <div class="workBx">
-
-                    <p class="topic">You can search your favourite Cocktail or hit random letters to get one 🍸</p>
-
-                    <p class="topic-2">HTML | CSS | JS | REACT | API</p>
+                    <p class="topic">
+                        <span class="title">Cocktail App: </span> This is a <span class="topic-2">React</span> app, in which third party <a id="special" href="https://www.thecocktaildb.com/api.php" target="_blank"> cocktaildb-api </a> is used to fetch data, and user can search
+                        his favorite cocktail
+                    </p>
 
                     <a href="https://cocktail-main.netlify.app/" target="_blank">
-                        <img src="images/cocktail.JPG" alt="" />
+                        <img src="images/cocktail.JPG" alt="" class="thumbnail" />
                     </a>
-
                     <div class="secondary-btn">
                         <!-- <button class="btn round cde">View Code</button> -->
-                        <a href="https://github.com/skininja673/Project3-Cocktail" class = "btn round cde" target="_blank" style="color: white;">View Code</a>
+                        <a href="https://github.com/skininja673/Project3-Cocktail" class="btn round cde" target="_blank" style="color: white">View Code</a>
                     </div>
-
                 </div>
+
+                <!-----color geneartor -------------------------->
                 <div class="workBx">
-                    <p class="topic">The menu links are dynamic in this project, i.e. data driven. User can filter the menu on click. </p>
-                    <p class="topic-2">HTML | CSS | JS | REACT </p>
+                    <p class="topic">
+                        <span class="title">Color Generator App: </span> This is a <span class="topic-2">React</span> app, where user can choose different color and shades. The data is coming from
+                        <a id="special" href="https://github.com/noeldelgado/values.js" target="_blank"> Values.js </a> library
+                    </p>
 
-                    <a href="https://phenomenal-seahorse-8cad60.netlify.app/" target="_blank">
-                        <img src="images/menu.JPG" alt="" />
+                    <a href="https://boisterous-kataifi-ff43c6.netlify.app/" target="_blank">
+                        <img src="images/colorGenerator.JPG" alt="" class="thumbnail" />
                     </a>
-
                     <div class="secondary-btn">
-                        <a href="https://github.com/skininja673/Menu" class = "btn round cde" target="_blank" style="color: white;">View Code</a>
+                        <a href="https://github.com/skininja673/color-generator-app" class="btn round cde" target="_blank" style="color: white">View Code</a>
                         <!-- <button class="btn round cde">View Code</button> -->
                     </div>
                 </div>
+
+                <!--------lorem ipsum generator------------------------->
+                <div class="workBx">
+                    <p class="topic">
+                        <span class="title">Lorem Ipsum Generator: </span> This is a <span class="topic-2">React</span> app, where user can generate lorem ipsum. User can generate maximum of 8 paragraphs. I learned how can we fetch data from external text data file, and restrict
+                        user to not exceed 8 paragraphs
+                    </p>
+
+                    <a href="https://animated-alpaca-fa2aa7.netlify.app/" target="_blank">
+                        <img src="images/loremGtor.JPG" alt="" class="thumbnail" />
+                    </a>
+                    <div class="secondary-btn">
+                        <a href="https://github.com/skininja673/lorem-ipsum-gtor" class="btn round cde" target="_blank" style="color: white">View Code</a>
+                        <!-- <button class="btn round cde">View Code</button> -->
+                    </div>
+                </div>
+
+                <!---------slider App-------------------------------------------------->
+                <div class="workBx">
+                    <p class="topic"><span class="title">Slider App: </span> This is a <span class="topic-2">React</span> app, its a slider and it changes in every 2 second.</p>
+                    <a href=" https://frabjous-zuccutto-a14ec4.netlify.app/ " target="_blank">
+                        <img src="images/slider.JPG" alt="" class="thumbnail" />
+                    </a>
+                    <div class="secondary-btn">
+                        <a href="https://github.com/skininja673/sliderApp" class="btn round cde" target="_blank" style="color: white">View Code</a>
+                        <!-- <button class="btn round cde">View Code</button> -->
+                    </div>
+                </div>
+
+                <!---------sidebar and modal--------------------------------------->
+                <div class="workBx">
+                    <p class="topic"><span class="title">Sidebar & Modal App: </span> This is a <span class="topic-2">React</span> app, its a very common UI seen in many websites.</p>
+                    <a href=" https://silly-rabanadas-de5545.netlify.app/" target="_blank">
+                        <img src="images/sidebarModal.JPG" alt="" class="thumbnail" />
+                    </a>
+                    <div class="secondary-btn">
+                        <a href="https://github.com/skininja673/sidebar-modal" class="btn round cde" target="_blank" style="color: white">View Code</a>
+                        <!-- <button class="btn round cde">View Code</button> -->
+                    </div>
+                </div>
+
+                <!-------dynamic navbar-------------------------------->
+                <div class="workBx">
+                    <p class="topic"><span class="title">Dynamic Nagivation: </span> This is a dynamic, responsive and data driven navigation bar created using <span class="topic-2">React</span> library</p>
+                    <br />
+
+                    <a href="https://profound-shortbread-abf6a7.netlify.app/" target="_blank">
+                        <img src="images/dynamicNav.JPG" alt="" class="thumbnail" />
+                    </a>
+                    <div class="secondary-btn">
+                        <a href="https://github.com/skininja673/dynamic-navbar" class="btn round cde" target="_blank" style="color: white">View Code</a>
+                        <!-- <button class="btn round cde">View Code</button> -->
+                    </div>
+                </div>
+                <!-------------------------------------------------------------->
             </div>
         </section>
 
@@ -218,16 +283,6 @@
                         comes along, Feel free to contact me!
                     </p> -->
                     <div class="contactInfoBx">
-                        <!-- <div class="box">
-                            <div class="icon">
-                                <i class="fa fa-map-marker"></i>
-                            </div>
-                            <div class="text">
-                                <h3>Address</h3>
-                                <p>Toronto Ontario</p>
-                                <p>Toronto Ontario,<br />123 Lauren Drive<br />Toronto, ON<br />ON, 12345</p>
-                            </div>
-                        </div> -->
                         <div class="box">
                             <div class="icon">
                                 <i class="fa fa-phone"></i>
@@ -262,13 +317,13 @@
                                 </a>
                             </div>
                             <div class="icon">
-                                <a href = "mailto: sharma.akalpit@gmail.com" target="_blank">
+                                <a href="mailto: sharma.akalpit@gmail.com" target="_blank">
                                     <i class="fa fa-solid fa-envelope"></i>
                                     <hr />
                                 </a>
                             </div>
                             <div class="icon">
-                                <a href = "https://calendly.com/akalpit" target="_blank">
+                                <a href="https://calendly.com/akalpit" target="_blank">
                                     <i class="fa fa-solid fa-calendar"></i>
                                     <hr />
                                 </a>

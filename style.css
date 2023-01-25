@@ -135,7 +135,7 @@ section {
     display: inline-block;
     /* color: #000; */
     color: #fff;
-    margin-top: 20px;
+    /* margin-top: 5px; */
     padding: 10px 30px;
     font-size: 18px;
     text-transform: uppercase;
@@ -147,6 +147,7 @@ section {
 .content {
     display: flex;
     justify-content: space-between;
+    /* border: 2px solid magenta; */
 }
 .heading {
     width: 100%;
@@ -242,20 +243,31 @@ img {
 }
 
 /* Creating Work Layout in CSS */
+
 .work .content {
+    /* border: 2px solid magenta; */
     display: flex;
     justify-content: center;
+
     flex-wrap: wrap;
     flex-direction: row;
 }
 .work .content .workBx {
-    width: 500px;
-    padding: 20px;
+    border: 1px dotted #009e66;
+    width: 350px;
+    height: 500px;
+    padding: 0px 20px;
+    margin: 20px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .work .content .workBx img {
     width: 100%;
-    /* border: 5px solid rgba(0, 0, 0, 0.4); */
-    /* border: 3px double #009e66; */
+    border: 4px solid rgba(0, 0, 0, 0.4);
+    /* border: 2px solid #009e66; */
+
     cursor: pointer;
     border-radius: 10px;
 }
@@ -281,6 +293,14 @@ img {
     color: #161616;
     text-decoration: none;
     font-weight: 600;
+}
+
+/* disclaimer */
+.disclaimer {
+    /* border: 2px solid green; */
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: italic;
 }
 
 /* Creating Contact Details Layout in CSS */
@@ -417,7 +437,7 @@ footer.copyright {
     border: 0;
     cursor: pointer;
     font-size: 1rem;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 
 .workBx h2 {
@@ -434,19 +454,31 @@ footer.copyright {
 }
 .topic {
     /* border: 2px solid red; */
-    margin-bottom: 13px;
     font-weight: bolder;
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
-    font-size: 1.2rem;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1rem;
     text-align: left;
+    line-height: 20px;
 }
 .topic-2 {
     /* border: 2px solid red; */
     /* font-weight: bolder; */
     color: #009e66;
     font-size: 1rem;
-    margin-bottom: 20px;
+    font-weight: bolder;
+}
+#special {
+    /* border: 2px solid red; */
+    font-weight: normal;
+    color: #009e66;
+    text-decoration: underline dotted #009e66 1.3px;
+}
+.title {
+    /* border: 2px solid red; */
+    font-weight: bold;
+    /* text-decoration:  black 1.3px; */
+    color: #161616d9;
 }
 
 /* media queries */
